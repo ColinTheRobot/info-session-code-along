@@ -10,9 +10,11 @@
 <br>
 
 ## Housekeeping to get started
-* https://ide.c9.io/colintherobot/info_session
-	* click the big green button at the top to request access
-* When I share my screen it will automatically become full screen which isn't conducive to you typing along. You can double click your screen to make it smaller and again to return to full size.
+* Download the Atom code editor
+	* MAC — https://atom.io/download/mac
+	* WINDOWS — https://atom.io/download/windows
+* When I share my screen it will automatically become full screen, which isn't conducive to you typing along. You can double click your screen to make it smaller and double click again to return to full size.
+* The first half of this lesson will be theory and the second will be practical. When we get the practical section you will be asked to write some code! Don't sweat it and be careful to not have any typos, punctuation and spelling are critical to your code working and is the very first thing developers need to learn to focus on!
 
 ## <a name="request-response">The request/response cycle</a>
 
@@ -89,15 +91,17 @@ Our browser **bakes** these **ingredients** (files) together to render a webpage
 
 **Question**: Has anyone heard of these terms? Has anyone built a website using HTML, CSS and Javascript?
 
-In Cloud9 we're gonna build a webpage that contains HTML, CSS and Javascript so we can see what each does for us. We'll walk through each of the steps below together.
+In Atom we're gonna build a webpage that contains HTML, CSS and Javascript so we can see what each does for us. We'll walk through each of the steps below together.
 
-To start, I'm gonna send you a link to my [Cloud9 workspace](https://ide.c9.io/marc_wright/info-test). You'll be able to copy any code you need. We'll also take a look at the finished version of what we're gonna build.
+To start, I'm going to share my screen so you can follow along with what I'm typing. You won't be able to copy any code, but I will give you time to to code along.
 
-1. Go to Cloud9 and create a new workspace. Give it a name and select "blank" workspace.
+1. Create new folder on your Desktop titled wdi-first-app
 
-2. Let's create a new file named `index.html`. You can do this by right-clicking on the folder on the top left of your screen and naming the file `index.html`.
+2. Let's create a new file in `wdi-first-app` named `index.html`.
 
-3. In your `index.html`, type in `html` then hit Tab. It should auto create a basic HTML structure. Next, inside the `<html>` tags, add `<head>` and `<body>`. Finally, inside the `body` of our page, let's add an `h1` tag that says "Hello World!". Our HTML markup should look like so:
+3. Open `wdi-first-app` directory in Atom. You can click and drag it your Atom app or open Atom and select File > Open and pick the directory
+
+4. In your `index.html`, type in `!` then hit Tab. It should auto create a basic HTML structure. Next, inside the `<html>` tags, add `<head>` and `<body>`. Finally, inside the `body` of our page, let's add an `h1` tag that says "Hello World!". Our HTML markup should look like so:
 
 	```html
 	<!DOCTYPE html>
@@ -111,9 +115,9 @@ To start, I'm gonna send you a link to my [Cloud9 workspace](https://ide.c9.io/m
 	</html>
 	```
 
-	Great, now we've got a great basic starter structure using HTML tags! Let's see it in action. Click on `Preview` at the top of the Cloud9 interface to open a new browser window like so:
+	Great, now we've got a great basic starter structure using HTML tags! Let's see it in action. Your browser is able to open files locally. And based on what we learned earlier, this shouldn't be too surprising. When we go to ESPN.com we're making a request for an html file from another server. In this case we're just going to give the browser an html file.
 
-	![](img/step1.png)
+	Go to your finder and find the index.html file. You can click and drag it into Chrome, but you can also just double click the file and should open in your default browser.
 
 
 4. Let's change the color and font of our "Hello World!" by adding some CSS. Normally, we'd want to put our CSS rules in a separate file, but today we're gonna add them inside our `head` tags:
@@ -135,9 +139,9 @@ To start, I'm gonna send you a link to my [Cloud9 workspace](https://ide.c9.io/m
    </html>
 	```
 
-	The browser window in Cloud9 should automatically refresh and show your changes like so:
+	The browser in Chrome won't look any different because it won't automatically detect and and show your changes.
 
-	![](img/step2.png)
+	But if you refresh the window it should reflect the changes you just made. If it doesn't, make sure you saved the file and that you don't have any typos!
 
 	Finally, let's add a button that will use Javascript to alert your name. Again, normally we'd want to create a separate file for this, but today we're gonna put it within `<script>` tags in our HTML.
 
@@ -149,11 +153,7 @@ To start, I'm gonna send you a link to my [Cloud9 workspace](https://ide.c9.io/m
 	// add the button inside the body of your page, just below your h1
 	```
 
-	The alert should look like this when clicked:
-
-	![](img/step3a.png)
-
-	<br>
+<br>
 
 ## <a name="bonus">![Imgur](http://i.imgur.com/K0d7Tq8.jpg)</a>
 
