@@ -5,7 +5,7 @@
 * [Describe the Request Response Cycle](#request-response)
 * [Differentiate between HTML, CSS and Javascript](#html-css-js)
 * [Build a webpage using HTML, CSS and Javascript](#build)
-* [Run/Load your code in the browser]()
+* [Run/Load your code in the browser](#run)
 * [Conclusion](#conclusion)
 
 <br>
@@ -118,7 +118,7 @@ To start, I'm going to share my screen so you can follow along with what I'm typ
 
 	Great, now we've got a great basic starter structure using HTML tags! Let's see it in action. Your browser is able to open files locally. And based on what we learned earlier, this shouldn't be too surprising. When we go to ESPN.com we're making a request for an html file from another server. In this case we're just going to give the browser an html file.
 
-	Go to your finder and find the index.html file. You can click and drag it into Chrome, but you can also just double click the file and should open in your default browser.
+	Go to your finder and find the index.html file. You <a name="run">can click and drag it into Chrome</a>, but you can also just double click the file and should open in your default browser.
 
 
 4. Let's change the color and font of our "Hello World!" by adding some CSS. Normally, we'd want to put our CSS rules in a separate file, but today we're gonna add them inside our `head` tags:
