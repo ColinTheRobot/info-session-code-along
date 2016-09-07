@@ -3,8 +3,9 @@
 
 ## Agenda + Objectives
 * [Describe the Request Response Cycle](#request-response)
-* [Understand the differences between HTML, CSS and Javascript](#html-css-js)
+* [Differentiate between HTML, CSS and Javascript](#html-css-js)
 * [Build a webpage using HTML, CSS and Javascript](#build)
+* [Run/Load your code in the browser]()
 * [Conclusion](#conclusion)
 
 <br>
