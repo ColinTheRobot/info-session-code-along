@@ -9,13 +9,20 @@
 
 <br>
 
+## Housekeeping to get started
+* https://ide.c9.io/colintherobot/info_session
+	* click the big green button at the top to request access
+* When I share my screen it will automatically become full screen which isn't conducive to you typing along. You can double click your screen to make it smaller and again to return to full size.
+
 ## <a name="request-response">The request/response cycle</a>
 
 Let's talk about what happens when we go to a webpage.
 
-**Question**: What do we need to do to actually go to a website?
+I'd like you to type your response and send it in the chat box. And if you'd like to come off mic and give your answer type that into the chat box as well.
 
-**Question**: And what happens when we go through that process? Be as technical or not not technical as you want.
+**Question**: What do we need to do to actually arrive at a website?
+
+**Question**: And what happens when we go through that process? Be as technical or not technical as you want.
 
 The **request/response cycle** is how your browser retrieves files from a server and renders a webpage.
 
@@ -24,11 +31,13 @@ The **request/response cycle** is how your browser retrieves files from a server
 
 <br>
 
-When you visit [ESPN](www.espn.com) you're making a **request** to a server that's located somewhere on the internet. Espn.com is merely an alias for the server's actual IP (Internet Protocol) address which is `http://68.71.212.186/`. I would never remember that!
+I'd like you all to open a new tab or window in chrome and go to www.espn.com.
 
-The server then sends you a **response** that generally consists of **HTML, CSS and Javascript** files. _We also receive other files like images, video, ads_.
+When you hit enter to visit [ESPN](www.espn.com) you're browser makes a **request** to a server that's located somewhere on the internet. Espn.com is merely an alias for the server's actual IP (Internet Protocol) address which is `http://68.71.212.186/`. I would never remember that! If you enter that address into the browser it will make the exact same request as `www.espn.com`
 
-Your browser takes those ingredients (the files) and bakes (renders) a webpage for you to view and interact with.
+Once the server receives your request it then sends you a **response** that generally consists of **HTML, CSS and Javascript** files. _We also receive other files like images, video, ads, etc._.
+
+Your browser takes the files received and renders (just a technical term for display) a webpage for you to view and interact with.
 
 <br>
 
@@ -37,6 +46,7 @@ Your browser takes those ingredients (the files) and bakes (renders) a webpage f
 
 - Copy and paste `68.71.212.186` into your browser URL. Where does it take you?
 - Let's open the **Chrome Developer Tools** (option + command + i) and select the **Network** tab. Notice all of the files that are being sent back to us in the response from ESPN!
+	- Or you can got to view > developer > developer tools (Should be in a similar location if you're on a pc or in a different browser)
 
 <br>
 
@@ -45,6 +55,8 @@ Your browser takes those ingredients (the files) and bakes (renders) a webpage f
 <br>
 
 ![wedo](http://i.imgur.com/6Kce0ca.png)
+
+Using the same method as before, type your response to the chat box and/or type if you'd like to come off mic to share your response.
 
 1. Describe the request/response cycle in your own words.
 2. What are the three file types that compose a basic webpage (hint... we're about to build a site with these three types)?
@@ -55,10 +67,12 @@ Your browser takes those ingredients (the files) and bakes (renders) a webpage f
 
 Most webpages (at a minimum) consist of HTML, CSS and Javascript files.
 
-- **HTML** stands for Hyper Text Markup Language. We use HTML tags to create HTML elements which give our page structure. You can think of HTML as the **NOUNS** of our page.
-- **CSS** stands for Cascading Style Sheets. You can think of CSS as the **ADJECTIVES** of our page. CSS consists of **rules** that determine the color, fonts, and sizes of our HTML elements.
-- **Javascript** dictates the behavior of our webpage. You can think of Javascript as the **VERBS** of a webpage. It allows events to happen when we click on a button to submit a form. 
+- **HTML** stands for Hyper Text Markup Language. We use HTML tags to create HTML elements which give our page structure. You can think of HTML as the **BONES** of our page.
+- **CSS** stands for Cascading Style Sheets. You can think of CSS as the **SKIN** of our page. CSS consists of **rules** that determine the color, fonts, and sizes of our HTML elements.
+- **Javascript** dictates the behavior of our webpage. You can think of Javascript as the **BRAIN** of a webpage. It allows events to happen when we click on a button to submit a form.
 
+
+You could also think of it as HTML being the **NOUNS**, CSS being the **ADJECTIVES**, and Javascript being the **VERBS**
 <br>
 
 ![](img/html-css-javascript.png)
