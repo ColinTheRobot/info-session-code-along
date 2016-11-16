@@ -13,18 +13,18 @@
 * Download the Atom code editor
 	* MAC — https://atom.io/download/mac
 	* WINDOWS — https://atom.io/download/windows
-* When I share my screen it will automatically become full screen, which isn't conducive to you typing along. You can double click your screen to make it smaller and double click again to return to full size.
-* The first half of this lesson will be theory and the second will be practical. When we get the practical section you will be asked to write some code! Don't sweat it and be careful to not have any typos, punctuation and spelling are critical to your code working and is the very first thing developers need to learn to focus on!
+* When I share my screen, it will automatically become full screen, which isn't conducive to you typing along. You can double click your screen to make it smaller and double click again to return to full size.
+* The first half of this lesson will be theory and the second half will be practical. During the theory, I'm going to ask you all some questions to ponder about how the internet works and so forth. When we get the practical section, you will be asked to write some code! Don't sweat it and be careful to check for typos—punctuation and spelling are critical to your code working and is the very first thing developers need to learn to focus on!
 
 ## <a name="request-response">The request/response cycle</a>
 
 Let's talk about what happens when we go to a webpage.
 
-I'd like you to type your response and send it in the chat box. And if you'd like to come off mic and give your answer type that into the chat box as well.
+I'd like you to type your response and send it in the chat box in Zoom. If you'd like to come on mic and give your answer type that into the chat box as well and I'll ask you to come on mic.
 
-**Question**: What do we need to do to actually arrive at a website?
+**Question**: Imagine you were explaining the Internet to someone who had never interacted with it. Describe how to go to a website.
 
-**Question**: And what happens when we go through that process? Be as technical or not technical as you want.
+**Question**: What happens when we go through that process? Be as technical or not technical as you want.
 
 The **request/response cycle** is how your browser retrieves files from a server and renders a webpage.
 
@@ -33,7 +33,7 @@ The **request/response cycle** is how your browser retrieves files from a server
 
 <br>
 
-I'd like you all to open a new tab or window in chrome and go to www.espn.com.
+I would like you all to open a new tab or window in chrome and go to www.espn.com.
 
 When you hit enter to visit [ESPN](www.espn.com) you're browser makes a **request** to a server that's located somewhere on the internet. Espn.com is merely an alias for the server's actual IP (Internet Protocol) address which is `http://68.71.212.186/`. I would never remember that! If you enter that address into the browser it will make the exact same request as `www.espn.com`
 
@@ -47,7 +47,7 @@ Your browser takes the files received and renders (just a technical term for dis
 
 
 - Copy and paste `68.71.212.186` into your browser URL. Where does it take you?
-- Let's open the **Chrome Developer Tools** (option + command + i) and select the **Network** tab. Notice all of the files that are being sent back to us in the response from ESPN!
+- Let's open the **Chrome Developer Tools** (option + command + i) and select the **Network** tab and refresh the page. Notice all of the files that are being sent back to us in the response from ESPN!
 	- Or you can got to view > developer > developer tools (Should be in a similar location if you're on a pc or in a different browser)
 
 <br>
@@ -88,12 +88,17 @@ Our browser **bakes** these **ingredients** (files) together to render a webpage
 ![wedo](http://i.imgur.com/6Kce0ca.png)
 
 ## <a name="build">Build a webpage using HTML, CSS and Javascript</a>
+---
+**Question**: On a scale of 1-5 how familiar are you with these terms?
 
-**Question**: Has anyone heard of these terms? Has anyone built a website using HTML, CSS and Javascript?
+One being, "First time I've heard about it," five being "I've written some basic HTML, CSS, and JS."
 
-In Atom we're gonna build a webpage that contains HTML, CSS and Javascript so we can see what each does for us. We'll walk through each of the steps below together.
+Respond in the Zoom chat box.
+---
 
-To start, I'm going to share my screen so you can follow along with what I'm typing. You won't be able to copy any code, but I will give you time to to code along.
+In Atom we're going to build a webpage that contains HTML, CSS and Javascript so we can see what each does for us. We'll walk through each of the steps below together.
+
+To start, I'm going to share my screen so you can follow along with what I'm typing. You won't be able to copy any code, but I will give you time to code along.
 
 1. Create new folder on your Desktop titled wdi-first-app
 
@@ -115,9 +120,9 @@ To start, I'm going to share my screen so you can follow along with what I'm typ
 	</html>
 	```
 
-	Great, now we've got a great basic starter structure using HTML tags! Let's see it in action. Your browser is able to open files locally. And based on what we learned earlier, this shouldn't be too surprising. When we go to ESPN.com we're making a request for an html file from another server. In this case we're just going to give the browser an html file.
+	Great, now we've got a great basic starter structure using HTML tags! Let's see it in action. Your browser can open files locally. And based on what we learned earlier, this shouldn't be too surprising. When we go to ESPN.com, we're making a request for an HTML file from another server. In this case, we're just going to give the browser an HTML file.
 
-	Go to your finder and find the index.html file. You can click and drag it into Chrome, but you can also just double click the file and should open in your default browser.
+  Go to your finder and find the index.html file. You can click and drag it into Chrome, but you can also just double click the file and should open in your default browser.
 
 
 4. Let's change the color and font of our "Hello World!" by adding some CSS. Normally, we'd want to put our CSS rules in a separate file, but today we're gonna add them inside our `head` tags:
@@ -139,14 +144,14 @@ To start, I'm going to share my screen so you can follow along with what I'm typ
    </html>
 	```
 
-	The browser in Chrome won't look any different because it won't automatically detect and and show your changes.
+	The browser in Chrome won't look any different because it won't automatically detect and show your changes.
 
 	But if you refresh the window it should reflect the changes you just made. If it doesn't, make sure you saved the file and that you don't have any typos!
 
-	Finally, let's add a button that will use Javascript to alert your name. Again, normally we'd want to create a separate file for this, but today we're gonna put it within `<script>` tags in our HTML.
+	Finally, let's add a button that will use Javascript to alert your name. Again, normally we'd want to create a separate file for this, but today we're going to put it within `<script>` tags in our HTML.
 
 
-5. Let's add a `button` element to our page and a Javascript [onclick](http://www.w3schools.com/jsref/event_onclick.asp) event. When our button is clicked, it'll fire off a browser alert. Let's add the code below:
+5. Let's add a `button` element to our page and a Javascript [onclick](http://www.w3schools.com/jsref/event_onclick.asp) event. When we click our button, it'll fire off a browser alert. Let's add the code below:
 
 	```html
 	<button onclick="alert('Hello World!')">Click me!</button>
