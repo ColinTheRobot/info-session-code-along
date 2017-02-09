@@ -11,9 +11,8 @@
 <br>
 
 ## Housekeeping to get started
-* Download the Atom code editor
-	* MAC — https://atom.io/download/mac
-	* WINDOWS — https://atom.io/download/windows
+* signup for codepen if you'd like to participate in the practical section later in the lesson
+	* http://codepen.io/
 * When I share my screen, it will automatically become full screen, which isn't conducive to you typing along. You can double click your screen to make it smaller and double click again to return to full size.
 * The first half of this lesson will be theory and the second half will be practical. During the theory, I'm going to ask you all some questions to ponder about how the internet works and so forth. When we get the practical section, you will be asked to write some code! Don't sweat it and be careful to check for typos—punctuation and spelling are critical to your code working and is the very first thing developers need to learn to focus on!
 
@@ -97,22 +96,20 @@ One being, "First time I've heard about it," five being "I've written some basic
 Respond in the Zoom chat box.
 ---
 
-In Atom we're going to build a webpage that contains HTML, CSS and Javascript so we can see what each does for us. We'll walk through each of the steps below together.
+In an actual WDI lesson we work in the Bash Terminal from day one. For today we're just going to use Code Pen. 
+
+We're going to build a webpage that contains HTML, CSS and Javascript so we can see what each does for us. We'll walk through each of the steps below together.
 
 To start, I'm going to share my screen so you can follow along with what I'm typing. You won't be able to copy any code, but I will give you time to code along.
 
-1. Create new folder on your Desktop titled wdi-first-app
-
-2. Let's create a new file in `wdi-first-app` named `index.html`.
-
-3. Open `wdi-first-app` directory in Atom. You can click and drag it your Atom app or open Atom and select File > Open and pick the directory
-
-4. In your `index.html`, type in `!` then hit Tab. It should auto create a basic HTML structure. Next, inside the `<html>` tags, add `<head>` and `<body>`. Finally, inside the `body` of our page, let's add an `h1` tag that says "Hello World!". Our HTML markup should look like so:
+1. In the html view, type in `!` then hit tab. It should auto create a basic HTML structure. Inside the `body` of our page, let's add an `h1` tag that says "Hello World!". Our HTML markup should look like so:
 
 	```html
 	<!DOCTYPE html>
-	<html>
-	  <head>
+	<html lang="en">
+	<head>
+	  <meta charset="UTF-8" />
+	  <title>Document</title>
 
 	  </head>
 	  <body>
@@ -122,9 +119,6 @@ To start, I'm going to share my screen so you can follow along with what I'm typ
 	```
 
 	Great, now we've got a great basic starter structure using HTML tags! Let's see it in action. Your browser can open files locally. And based on what we learned earlier, this shouldn't be too surprising. When we go to ESPN.com, we're making a request for an HTML file from another server. In this case, we're just going to give the browser an HTML file.
-
-	Go to your finder and find the index.html file. You <a name="run">can click and drag it into Chrome</a>, but you can also just double click the file and should open in your default browser.
-
 
 4. Let's change the color and font of our "Hello World!" by adding some CSS. Normally, we'd want to put our CSS rules in a separate file, but today we're gonna add them inside our `head` tags:
 
@@ -145,12 +139,7 @@ To start, I'm going to share my screen so you can follow along with what I'm typ
    </html>
 	```
 
-	The browser in Chrome won't look any different because it won't automatically detect and show your changes.
-
-	But if you refresh the window it should reflect the changes you just made. If it doesn't, make sure you saved the file and that you don't have any typos!
-
-	Finally, let's add a button that will use Javascript to alert your name. Again, normally we'd want to create a separate file for this, but today we're going to put it within `<script>` tags in our HTML.
-
+	Finally, let's add a button that will use Javascript to alert your name. Again, normally we'd want to create a separate file for this, but today we're going to embed it in our button element as an attribute.
 
 5. Let's add a `button` element to our page and a Javascript [onclick](http://www.w3schools.com/jsref/event_onclick.asp) event. When we click our button, it'll fire off a browser alert. Let's add the code below:
 
